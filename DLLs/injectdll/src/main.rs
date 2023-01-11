@@ -44,7 +44,7 @@ pub fn inject_dll(handle:HANDLE,path:&str){
 
 pub fn main(){
     let pid :u32= 100; // Specify process' PID to inject into 
-    let path:&str=r#""#; // Specify dll to inject
+    let path:&str=r#"C:\D\E\yourmom.dll"#; // Specify dll to inject
     
     let proc_handle= unsafe{
         match OpenProcess(PROCESS_ALL_ACCESS, // PROCESS_ALL_ACCESS = 0x001FFFFF
